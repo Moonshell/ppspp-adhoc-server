@@ -11,7 +11,7 @@ COPY ./src /adhoc
 COPY ./database.db /adhoc/database.db
 COPY ./Makefile /adhoc/Makefile
 
-RUN /adhoc/make
+RUN make
 
 EXPOSE 27312
 
