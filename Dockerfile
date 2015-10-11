@@ -14,6 +14,6 @@ COPY ./Makefile /adhoc/Makefile
 
 RUN make
 
-EXPOSE 27312
+EXPOSE 27160 27312
 
 CMD ["/adhoc/AdhocServer"]
