@@ -8,10 +8,10 @@ RUN mkdir -p /adhoc
 WORKDIR /adhoc
 
 COPY ./src /adhoc
-ADD ./database.db /adhoc/database.db
-ADD ./Makefile /adhoc/Makefile
+COPY ./database.db /adhoc/database.db
+COPY ./Makefile /adhoc/Makefile
 
-RUN make
+RUN /adhoc/make
 
 EXPOSE 27312
 
