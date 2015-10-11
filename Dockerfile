@@ -8,8 +8,8 @@ RUN mkdir -p /adhoc
 WORKDIR /adhoc
 
 COPY ./src /adhoc
-ADD ./database.db /adhoc
-ADD ./Makefile /adhoc
+ADD ./database.db /adhoc/database.db
+ADD ./Makefile /adhoc/Makefile
 
 RUN make
 
