@@ -3,7 +3,7 @@ MAINTAINER krimeshu <krimeshu@gmail.com>
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get -y install libc4-dev
+RUN apt-get -y install libc6-dev
 RUN apt-get -y install libgmp-dev
 RUN apt-get -y install libmpfr4 libmpfr-dev
 RUN apt-get -y install libmpc-dev libmpc2
