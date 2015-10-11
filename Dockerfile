@@ -1,7 +1,7 @@
 FROM ubuntu
 MAINTAINER krimeshu <krimeshu@gmail.com>
 
-RUN apt-get -y install libc6-dev libsqlite3-dev
+RUN apt-get -y install gcc libc6-dev libsqlite3-dev
 
 RUN mkdir -p /adhoc
 WORKDIR /adhoc
