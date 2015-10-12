@@ -1,4 +1,4 @@
-FROM ubuntu:14
+FROM ubuntu
 MAINTAINER krimeshu <krimeshu@gmail.com>
 
 RUN apt-get update \
