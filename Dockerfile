@@ -1,9 +1,9 @@
-FROM centos:7
+FROM ubuntu:14
 MAINTAINER krimeshu <krimeshu@gmail.com>
 
-RUN yum -y install gcc
-RUN yum -y install sqlite-devel
-RUN yum -y install make
+RUN apt-get update \
+ && apt-get -y build-dep gcc \
+ && apt-get -y install libsqlite3-dev make
 
 RUN mkdir -p /adhoc
 WORKDIR /adhoc
